@@ -20,8 +20,28 @@ public class MergeSort {
         intArrSort(leftArray);
         intArrSort(rightArray);
 
-        return ArrayMerger.merge(leftArray, rightArray);
+        arrayToSort = ArrayMerger.merge(leftArray, rightArray);
 
+        return arrayToSort;
     }
 
+    private static void merge(int[] arrIn, int[] leftArray, int[] rightArray) {
+        int leftLength = leftArray.length;
+        int rightLength = rightArray.length;
+
+        int leftArrPointer = 0;
+        int rightArrPointer = 0;
+        int arrInPointer = 0;
+
+        while (leftArrPointer < leftLength && rightArrPointer < rightLength) {
+            if (leftArray[leftArrPointer] < rightArray[leftArrPointer]) {
+                arrIn[arrInPointer] = leftArray[leftArrPointer];
+                leftArrPointer++;
+            } else {
+                arrIn[arrInPointer] = rightArray[rightArrPointer];
+                rightArrPointer++;
+            }
+            arrInPointer++;
+        }
+    }
 }
