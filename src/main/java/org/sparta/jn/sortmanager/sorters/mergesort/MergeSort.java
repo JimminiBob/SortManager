@@ -2,27 +2,25 @@ package org.sparta.jn.sortmanager.sorters.mergesort;
 
 public class MergeSort {
 
-    public static int[] intArrSort(int[] arrIn) {
-        int[] arrayToSort = arrIn;
-        if (arrIn.length <= 1) {
-            return arrayToSort;
+    public static void intArrSort(int[] arrIn) {
+        int arrInLength = arrIn.length;
+        if (arrInLength < 2) {
+            return;
         }
-        int mid = arrIn.length / 2;
+        int mid = arrInLength / 2;
         int[] leftArray = new int[mid];
-        int[] rightArray = new int[arrIn.length - mid];
+        int[] rightArray = new int[arrInLength - mid];
 
         for (int i = 0; i < mid; i++) {
-            leftArray[i] = arrayToSort[i];
+            leftArray[i] = arrIn[i];
         }
-        for (int i = mid; i < arrIn.length ; i++) {
-            rightArray[i - mid] = arrayToSort[i];
+        for (int i = mid; i < arrInLength ; i++) {
+            rightArray[i - mid] = arrIn[i];
         }
         intArrSort(leftArray);
         intArrSort(rightArray);
 
-        merge(arrayToSort, leftArray, rightArray);
-
-        return arrayToSort;
+        merge(arrIn, leftArray, rightArray);
     }
 
     private static void merge(int[] arrIn, int[] leftArray, int[] rightArray) {

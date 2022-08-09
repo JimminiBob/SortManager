@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort merge method">
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort merge method completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,18 +53,16 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest.sortArrayOfOneLength">
-    <configuration name="ArrayMergerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.App" />
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.ArrayMergerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
-        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest" />
-        <item itemvalue="JUnit.ArrayMergerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660077062488</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MergeSort merge method completed">
+      <created>1660077536075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660077536075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,15 +203,16 @@
     <MESSAGE value=" getNumberOfElements" />
     <MESSAGE value="MergeSort with return int[]" />
     <MESSAGE value="MergeSort merge method" />
-    <option name="LAST_COMMIT_MESSAGE" value="MergeSort merge method" />
+    <MESSAGE value="MergeSort merge method completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="MergeSort merge method completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="6" />
+          <line>27</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
