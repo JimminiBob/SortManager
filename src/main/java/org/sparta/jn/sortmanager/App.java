@@ -13,11 +13,13 @@ public class App
         BinaryTreeImpl tree = new BinaryTreeImpl(5);
         tree.addElementToTree(1);
         tree.addElementToTree(5);
-        tree.addElementToTree(10);
-        tree.addElementToTree(3);
-        tree.addElementToTree(6);
-        tree.addElementToTree(11);
+//        tree.addElementToTree(10);
+//        tree.addElementToTree(3);
+//        tree.addElementToTree(6);
+//        tree.addElementToTree(11);
+//        System.out.println(tree.findElement(11));
 
-        System.out.println(tree.findElement(11));
-   }
+        System.out.println(tree.getNumberOfElements());
+
+    }
 }

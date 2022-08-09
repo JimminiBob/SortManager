@@ -24,17 +24,20 @@ public class BinaryTreeImpl implements BinaryTree {
     @Override
     public int getNumberOfElements() {
         Node node = rootNode;
-        int count = 0;
+        int count = 1;
 
         if (node.isLeftChildEmpty() && node.isRightChildEmpty()) {
-            return 1;
+            return count;
         }
-
-        if (!node.isLeftChildEmpty()) {
-            count++;
-        }
-        return 0;
+        do {
+            if (!node.isLeftChildEmpty()) {
+                count++;
+                node = node.getLeftChild();
+            }
+        } while(node == null);
+        return count;
     }
+
 
     @Override
     public void addElement(int element) {
@@ -106,5 +109,7 @@ public class BinaryTreeImpl implements BinaryTree {
         }
         return null;
     }
+
+    private Node treeTraversal()
 }
 

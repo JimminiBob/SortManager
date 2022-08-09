@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/exceptions/ChildNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/SortManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="BinaryTree test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorts/ArrayMerger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/ArrayMerger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorts/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/bubblesort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorts/MergeSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorts/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/Sortable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/ArrayMergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/ArrayMergerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BubbleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +50,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeImplTest.ifOnlyOneNudeReturnInt1">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.App" />
       <module name="SortManager" />
@@ -72,6 +60,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.BinaryTreeImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,26 +95,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryTreeImplTest.ifThreeElementsInTheTreeReturnInt3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorters.bubblesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.BubbleSortTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.BinaryTreeImplTest" />
+      <option name="METHOD_NAME" value="ifThreeElementsInTheTreeReturnInt3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeImplTest.ifTwoElementsInTheTreeReturnInt2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.BinaryTreeImplTest" />
+      <option name="METHOD_NAME" value="ifTwoElementsInTheTreeReturnInt2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BinaryTreeImplTest.ifOnlyOneNudeReturnInt1" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.BubbleSortTest" />
+        <item itemvalue="JUnit.BinaryTreeImplTest" />
+        <item itemvalue="JUnit.BinaryTreeImplTest.ifThreeElementsInTheTreeReturnInt3" />
+        <item itemvalue="JUnit.BinaryTreeImplTest.ifTwoElementsInTheTreeReturnInt2" />
+        <item itemvalue="JUnit.BinaryTreeImplTest.ifOnlyOneNudeReturnInt1" />
       </list>
     </recent_temporary>
   </component>
@@ -124,6 +146,14 @@
       <option name="presentableId" value="Default" />
       <updated>1659961520430</updated>
     </task>
+    <task id="LOCAL-00001" summary="BinaryTree test">
+      <created>1660056925614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660056925614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,5 +166,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BinaryTree test" />
+    <option name="LAST_COMMIT_MESSAGE" value="BinaryTree test" />
   </component>
 </project>
