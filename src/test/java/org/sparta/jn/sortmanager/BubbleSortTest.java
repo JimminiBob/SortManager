@@ -22,13 +22,15 @@ public class BubbleSortTest {
         int[] numbers = {99, 1, 4, 2, 32, -1};
         int[] sorted = BubbleSort.intArraySorter(numbers);
         int[] expected = {-1, 1 , 2, 4, 32, 99};
-//        Assertions.assertAll((() -> Assertions.assertEquals(-1,sorted[0])),
+
+        Assertions.assertArrayEquals(expected, sorted);
+
+        //        Assertions.assertAll((() -> Assertions.assertEquals(-1,sorted[0])),
 //                            () -> Assertions.assertEquals(1,sorted[1]),
 //                            () -> Assertions.assertEquals(2,sorted[2]),
 //                            () -> Assertions.assertEquals(4,sorted[3]),
 //                            () -> Assertions.assertEquals(32,sorted[4]),
 //                            () -> Assertions.assertEquals(99,sorted[5]));
-        Assertions.assertArrayEquals(expected, sorted);
     }
 
     @Test
