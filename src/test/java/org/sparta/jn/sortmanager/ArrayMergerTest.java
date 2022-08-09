@@ -3,7 +3,7 @@ package org.sparta.jn.sortmanager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.jn.sortmanager.sorts.ArrayMerger;
+import org.sparta.jn.sortmanager.sorters.mergesort.ArrayMerger;
 
 import java.util.Arrays;
 

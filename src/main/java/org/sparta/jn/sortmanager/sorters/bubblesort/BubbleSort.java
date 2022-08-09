@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager.sorts;
+package org.sparta.jn.sortmanager.sorters.bubblesort;
 
 public class BubbleSort {
     public static int[] intArraySorter(int[] arrayIn) {

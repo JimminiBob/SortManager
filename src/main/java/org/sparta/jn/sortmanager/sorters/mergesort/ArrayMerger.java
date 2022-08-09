@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager.sorts;
+package org.sparta.jn.sortmanager.sorters.mergesort;
 
 public class ArrayMerger {
 
