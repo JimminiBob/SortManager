@@ -20,7 +20,7 @@ public class MergeSort {
         intArrSort(leftArray);
         intArrSort(rightArray);
 
-        arrayToSort = ArrayMerger.merge(leftArray, rightArray);
+        merge(arrayToSort, leftArray, rightArray);
 
         return arrayToSort;
     }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort with return int[]">
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort merge method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" afterDir="false" />
@@ -52,7 +52,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayMergerTest">
+  <component name="RunManager" selected="JUnit.MergeSortTest.sortArrayOfOneLength">
     <configuration name="ArrayMergerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
@@ -79,6 +79,22 @@
       <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.MergeSortTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSortTest.sortArrayOfOneLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.MergeSortTest" />
+      <option name="METHOD_NAME" value="sortArrayOfOneLength" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,29 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortTest.sortUnsortedIntArrayIntoSortedIntArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.MergeSortTest" />
-      <option name="METHOD_NAME" value="sortUnsortedIntArrayIntoSortedIntArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayMergerTest" />
-        <item itemvalue="JUnit.MergeSortTest" />
-        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
+        <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
-        <item itemvalue="JUnit.MergeSortTest.sortUnsortedIntArrayIntoSortedIntArray" />
+        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
+        <item itemvalue="JUnit.MergeSortTest" />
+        <item itemvalue="JUnit.ArrayMergerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660074451869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MergeSort merge method">
+      <created>1660077062488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660077062488</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +196,8 @@
     <MESSAGE value="BinaryTree test" />
     <MESSAGE value=" getNumberOfElements" />
     <MESSAGE value="MergeSort with return int[]" />
-    <option name="LAST_COMMIT_MESSAGE" value="MergeSort with return int[]" />
+    <MESSAGE value="MergeSort merge method" />
+    <option name="LAST_COMMIT_MESSAGE" value="MergeSort merge method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
