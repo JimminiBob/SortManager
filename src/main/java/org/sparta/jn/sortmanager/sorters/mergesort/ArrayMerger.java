@@ -35,14 +35,14 @@ public class ArrayMerger {
         return returnArr;
     }
 
-    private static boolean isAscendingOrder(int[] arrayIn) {
-
-        for (int i = 0; i < arrayIn.length - 1; i++) {
-            if (arrayIn[i] > arrayIn[i + 1])
-                return false;
-        }
-        return true;
-    }
+//    private static boolean isAscendingOrder(int[] arrayIn) {
+//
+//        for (int i = 0; i < arrayIn.length - 1; i++) {
+//            if (arrayIn[i] > arrayIn[i + 1])
+//                return false;
+//        }
+//        return true;
+//    }
 
 
 }
