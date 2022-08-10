@@ -1,5 +1,9 @@
 package org.sparta.jn.sortmanager.sorters.mergesort;
 
+import org.sparta.jn.sortmanager.RandomIntArray;
+
+import java.util.Arrays;
+
 public class MergeSort {
 
     public static void intArrSort(int[] arrIn) {
@@ -32,7 +36,7 @@ public class MergeSort {
         int arrInPointer = 0;
 
         while (leftArrPointer < leftLength && rightArrPointer < rightLength) {
-            if (leftArray[leftArrPointer] < rightArray[leftArrPointer]) {
+            if (leftArray[leftArrPointer] < rightArray[rightArrPointer]) {
                 arrIn[arrInPointer] = leftArray[leftArrPointer];
                 leftArrPointer++;
             } else {
@@ -54,6 +58,20 @@ public class MergeSort {
                 arrInPointer++;
             }
         }
-
     }
+
+//    public static void main(String[] args) {
+//        RandomIntArray arrayGen = new RandomIntArray();
+//        int[] arr1 = arrayGen.build(5);
+//        int[] arr2 = arrayGen.build(5);
+//        int[] arr3 = new int[10];
+//        Arrays.sort(arr1);
+//        Arrays.sort(arr2);
+//
+//        MergeSort.merge(arr3,arr1,arr2);
+//
+//        System.out.println("arr1 is " + Arrays.toString(arr1));
+//        System.out.println("arr2 is " + Arrays.toString(arr2));
+//        System.out.println("arr3 is " + Arrays.toString(arr3));
+//    }
 }
