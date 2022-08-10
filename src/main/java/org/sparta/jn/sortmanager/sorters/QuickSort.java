@@ -1,6 +1,10 @@
 package org.sparta.jn.sortmanager.sorters;
 
-public class QuickSort implements Sorter{
+import org.sparta.jn.sortmanager.IntArrayGenerator;
+
+import java.util.Arrays;
+
+public class QuickSort implements Sortable{
     public int[] quickSort(int[] arr, int begin, int end) {
         if (begin < end) {
             int partitionIndex = partition(arr, begin, end);
@@ -29,7 +33,14 @@ public class QuickSort implements Sorter{
     }
 
     @Override
-    public int[] SortArray(int[] arrays) {
-        return quickSort(arrays, arrays[0], arrays.length -1);
+    public int[] sortArray(int[] arrayToSort) {
+        return quickSort(arrayToSort, 0, arrayToSort.length - 1);
     }
+
+//        public static void main(String[] args) {
+//        int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
+//        int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
+//
+//        System.out.println("arr3 is " + Arrays.toString(new QuickSort().sortArray(unsorted)));
+//    }
 }

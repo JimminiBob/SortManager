@@ -1,6 +1,8 @@
 package org.sparta.jn.sortmanager.sorters.bubblesort;
 
-public class BubbleSort {
+import org.sparta.jn.sortmanager.sorters.Sortable;
+
+public class BubbleSort implements Sortable {
     public static int[] intArraySorter(int[] arrayIn) {
         int[] arrayOut = arrayIn;
         int length = arrayIn.length;
@@ -19,5 +21,10 @@ public class BubbleSort {
         int temp = arrayToSwap[j];
         arrayToSwap[j] = arrayToSwap[j +1];
         arrayToSwap[j +1] = temp;
+    }
+
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        return BubbleSort.intArraySorter(arrayToSort);
     }
 }

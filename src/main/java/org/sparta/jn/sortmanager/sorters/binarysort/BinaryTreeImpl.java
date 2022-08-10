@@ -1,6 +1,7 @@
 package org.sparta.jn.sortmanager.sorters.binarysort;
 
 import org.sparta.jn.sortmanager.exceptions.ChildNotFoundException;
+import org.sparta.jn.sortmanager.sorters.Sortable;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 //public - methods you can access
 //private - implementation
 //abstract Nodes - show values
-public class BinaryTreeImpl implements BinaryTree {
+public class BinaryTreeImpl implements BinaryTree, Sortable {
     private final Node rootNode;
 
     public BinaryTreeImpl(int elements) {
@@ -70,16 +71,28 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
+        int length = getNumberOfElements();
+        int[] arr = new int[length];
+        addToArray(rootNode, arr, 0);
+        return arr;
 
-        return null;
-
-//        return inOrder(rootNode);
     }
 
     @Override
     public int[] getSortedTreeDesc() {
 
         return new int[0];
+    }
+    public int addToArray(Node node, int[] array, int index) {
+        if (node == null) {
+            return index;
+        }
+
+        addToArray(node.getLeftChild(), array, index);
+        array[index++] = node.getValue();
+        addToArray(node.getRightChild(), array, index);
+
+        return index;
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
@@ -123,17 +136,13 @@ public class BinaryTreeImpl implements BinaryTree {
         return count;
     }
 
-    public void addToArray(Node node, int[] array, int index) {
-        if (node == null) {
-            return;
-        }
 
-        addToArray(node.getLeftChild());
-        array.add(node.getValue());
-        addToArray(node.getRightChild();
+
+
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        return new int[0];
     }
-
-
     public static void main(String[] args) {
         BinaryTreeImpl tree = new BinaryTreeImpl(5);
         tree.addElement(11);
@@ -143,6 +152,7 @@ public class BinaryTreeImpl implements BinaryTree {
 //        System.out.println(tree.getLeftChild(11));
 //        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
 //        ArrayList<Object> arrayList = new ArrayList<>();
+        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));
     }
 }
 
