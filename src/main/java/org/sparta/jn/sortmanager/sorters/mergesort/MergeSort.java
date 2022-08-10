@@ -41,5 +41,19 @@ public class MergeSort {
             }
             arrInPointer++;
         }
+        if (leftArrPointer == leftLength) {
+            for (int i = rightArrPointer; i < rightLength; i++) {
+                arrIn[arrInPointer] = rightArray[rightArrPointer];
+                rightArrPointer++;
+                arrInPointer++;
+            }
+        } else {
+            for (int i = leftArrPointer; i < leftLength; i++) {
+                arrIn[arrInPointer] = leftArray[leftArrPointer];
+                leftArrPointer++;
+                arrInPointer++;
+            }
+        }
+
     }
 }

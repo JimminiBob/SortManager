@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort merge method completed">
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment=" getNumberOfElements working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +51,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.App" />
       <module name="SortManager" />
@@ -132,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
+        <item itemvalue="JUnit.MergeSortTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
-        <item itemvalue="JUnit.MergeSortTest" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +211,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java</url>
           <line>27</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
