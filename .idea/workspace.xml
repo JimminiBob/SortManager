@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Added to MergeSort">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/TheBox.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Bubblesort with Generics (not tested)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660121441512</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Bubblesort with Generics (not tested)">
+      <created>1660126329653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660126329653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +220,8 @@
     <MESSAGE value="MergeSort merge method" />
     <MESSAGE value="MergeSort merge method completed" />
     <MESSAGE value="Added to MergeSort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to MergeSort" />
+    <MESSAGE value="Bubblesort with Generics (not tested)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bubblesort with Generics (not tested)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
