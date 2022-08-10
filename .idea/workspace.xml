@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment=" getNumberOfElements working">
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Added to MergeSort">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/TheBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +36,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/kwokl/AppData/Roaming/JetBrains/IdeaIC2022.2/scratches"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kwokl\AppData\Roaming\JetBrains\IdeaIC2022.2\scratches" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kwokl\IdeaProjects\SortManager\src\main\java\org\sparta\jn\sortmanager\sorters\mergesort" />
     </key>
@@ -182,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660077536075</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added to MergeSort">
+      <created>1660121441512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660121441512</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +214,8 @@
     <MESSAGE value="MergeSort with return int[]" />
     <MESSAGE value="MergeSort merge method" />
     <MESSAGE value="MergeSort merge method completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="MergeSort merge method completed" />
+    <MESSAGE value="Added to MergeSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to MergeSort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

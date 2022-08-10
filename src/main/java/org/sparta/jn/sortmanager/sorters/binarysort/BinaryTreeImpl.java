@@ -29,6 +29,9 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public void addElements(int[] elements) {
+        for(int element: elements) {
+            addElement(element);
+        }
 
     }
 
