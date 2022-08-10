@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="QuickSort seems to be working">
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="BinaryTreeImpl primitive array version not working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
     </list>
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660160711168</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="BinaryTreeImpl primitive array version not working">
+      <created>1660162331829</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660162331829</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +247,8 @@
     <MESSAGE value="No change i think" />
     <MESSAGE value="MergeSort passed initial test" />
     <MESSAGE value="QuickSort seems to be working" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuickSort seems to be working" />
+    <MESSAGE value="BinaryTreeImpl primitive array version not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="BinaryTreeImpl primitive array version not working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java</url>
-          <line>155</line>
+          <line>157</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

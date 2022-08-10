@@ -3,7 +3,6 @@ package org.sparta.jn.sortmanager.sorters.binarysort;
 import org.sparta.jn.sortmanager.exceptions.ChildNotFoundException;
 import org.sparta.jn.sortmanager.sorters.Sortable;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -71,11 +70,10 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public int[] getSortedTreeAsc() {
-        int length = getNumberOfElements();
-        int[] arr = new int[length];
-        addToArray(rootNode, arr, 0);
-        return arr;
 
+        List<Integer> list = new ArrayList<>();
+        treeToList(rootNode, list);
+        return listToArray(list);
     }
 
     @Override
@@ -83,16 +81,21 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
         return new int[0];
     }
-    public int addToArray(Node node, int[] array, int index) {
+    private void treeToList(Node node, List<Integer> list) {
         if (node == null) {
-            return index;
+            return;
         }
+        treeToList(node.getLeftChild(), list);
+        list.add(node.getValue());
+        treeToList(node.getRightChild(), list);
+    }
 
-        addToArray(node.getLeftChild(), array, index);
-        array[index++] = node.getValue();
-        addToArray(node.getRightChild(), array, index);
-
-        return index;
+    private int[] listToArray(List<Integer> listIn) {
+        int[] arr = new int[listIn.size()];
+        for (int i = 0; i < listIn.size(); i++) {
+            arr[i] = listIn.get(i);
+        }
+        return arr;
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
