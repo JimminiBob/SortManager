@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="No change i think">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/RandomIntArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/MergeSortTest.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="MergeSort passed initial test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/Sortable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/RandomIntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/IntArrayGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/ArrayMergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/ArrayMergerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/MergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +60,13 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.App" />
+  <component name="RunManager" selected="Application.BinaryTreeImpl">
+    <configuration name="BinaryTreeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl" />
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorters.binarysort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,21 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorters.mergesort.MergeSort" />
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorters.mergesort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomIntArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.RandomIntArray" />
+    <configuration name="IntArrayGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.IntArrayGenerator" />
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
@@ -115,6 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MergeSortTest.sortArrayOfOneLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.mergesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.mergesort" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.mergesort.MergeSortTest" />
+      <option name="METHOD_NAME" value="sortArrayOfOneLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
@@ -133,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTreeImpl" />
         <item itemvalue="JUnit.MergeSortTest" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.RandomIntArray" />
+        <item itemvalue="Application.IntArrayGenerator" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660140288033</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MergeSort passed initial test">
+      <created>1660144244151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660144244151</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +239,8 @@
     <MESSAGE value="Added to MergeSort" />
     <MESSAGE value="Bubblesort with Generics (not tested)" />
     <MESSAGE value="No change i think" />
-    <option name="LAST_COMMIT_MESSAGE" value="No change i think" />
+    <MESSAGE value="MergeSort passed initial test" />
+    <option name="LAST_COMMIT_MESSAGE" value="MergeSort passed initial test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,16 +249,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java</url>
           <line>27</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/MergeSortTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

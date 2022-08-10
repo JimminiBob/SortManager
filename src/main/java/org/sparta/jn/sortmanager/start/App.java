@@ -25,7 +25,7 @@ public class App
 //        System.out.println(tree.getNumberOfElements());
 
         int[] array = {7, 1 ,9};
-        MergeSort.intArrSort(array);
+        MergeSort.sort(array);
         System.out.println(Arrays.toString(array));
 
     }

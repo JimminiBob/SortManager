@@ -2,6 +2,11 @@ package org.sparta.jn.sortmanager.sorters.binarysort;
 
 import org.sparta.jn.sortmanager.exceptions.ChildNotFoundException;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 //public - methods you can access
 //private - implementation
 //abstract Nodes - show values
@@ -46,21 +51,34 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int getLeftChild(int element) throws ChildNotFoundException {
-        return 0;
+        Node node = findNode(element);
+        return node.getLeftChild().getValue();
+
+//        try {
+//            return node.getLeftChild().getValue();
+//        } catch (ChildNotFoundException e) {
+//            System.err.println("That element has no left child!");
+//            return 0;
+//        }
     }
 
     @Override
     public int getRightChild(int element) throws ChildNotFoundException {
-        return 0;
+        Node node = findNode(element);
+        return node.getRightChild().getValue();
     }
 
     @Override
     public int[] getSortedTreeAsc() {
-        return new int[0];
+
+        return null;
+
+//        return inOrder(rootNode);
     }
 
     @Override
     public int[] getSortedTreeDesc() {
+
         return new int[0];
     }
 
@@ -103,6 +121,28 @@ public class BinaryTreeImpl implements BinaryTree {
         }
         count = count + countNode(node.getLeftChild()) + countNode(node.getRightChild());
         return count;
+    }
+
+    public void addToArray(Node node, int[] array, int index) {
+        if (node == null) {
+            return;
+        }
+
+        addToArray(node.getLeftChild());
+        array.add(node.getValue());
+        addToArray(node.getRightChild();
+    }
+
+
+    public static void main(String[] args) {
+        BinaryTreeImpl tree = new BinaryTreeImpl(5);
+        tree.addElement(11);
+        tree.addElement(2);
+        tree.addElement(6);
+//        System.out.println(tree.getNumberOfElements());
+//        System.out.println(tree.getLeftChild(11));
+//        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
+//        ArrayList<Object> arrayList = new ArrayList<>();
     }
 }
 

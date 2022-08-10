@@ -1,30 +1,28 @@
 package org.sparta.jn.sortmanager.sorters.mergesort;
 
-import org.sparta.jn.sortmanager.RandomIntArray;
-
-import java.util.Arrays;
-
 public class MergeSort {
 
-    public static void intArrSort(int[] arrIn) {
-        int arrInLength = arrIn.length;
+    public static int[] sort(int[] arrIn) {
+        int[] arrOut = arrIn;
+        int arrInLength = arrOut.length;
         if (arrInLength < 2) {
-            return;
+            return arrOut;
         }
         int mid = arrInLength / 2;
         int[] leftArray = new int[mid];
         int[] rightArray = new int[arrInLength - mid];
 
         for (int i = 0; i < mid; i++) {
-            leftArray[i] = arrIn[i];
+            leftArray[i] = arrOut[i];
         }
         for (int i = mid; i < arrInLength ; i++) {
-            rightArray[i - mid] = arrIn[i];
+            rightArray[i - mid] = arrOut[i];
         }
-        intArrSort(leftArray);
-        intArrSort(rightArray);
+        sort(leftArray);
+        sort(rightArray);
 
-        merge(arrIn, leftArray, rightArray);
+        merge(arrOut, leftArray, rightArray);
+        return arrOut;
     }
 
     private static void merge(int[] arrIn, int[] leftArray, int[] rightArray) {
