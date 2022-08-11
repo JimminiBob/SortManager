@@ -72,22 +72,33 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     public int[] getSortedTreeAsc() {
 
         List<Integer> list = new ArrayList<>();
-        treeToList(rootNode, list);
+        treeToListAsc(rootNode, list);
         return listToArray(list);
     }
 
     @Override
     public int[] getSortedTreeDesc() {
 
-        return new int[0];
+        List<Integer> list = new ArrayList<>();
+        treeToListDesc(rootNode, list);
+        return listToArray(list);
     }
-    private void treeToList(Node node, List<Integer> list) {
+    private void treeToListAsc(Node node, List<Integer> list) {
         if (node == null) {
             return;
         }
-        treeToList(node.getLeftChild(), list);
+        treeToListAsc(node.getLeftChild(), list);
         list.add(node.getValue());
-        treeToList(node.getRightChild(), list);
+        treeToListAsc(node.getRightChild(), list);
+    }
+
+    private void treeToListDesc(Node node, List<Integer> list) {
+        if (node == null) {
+            return;
+        }
+        treeToListDesc(node.getRightChild(), list);
+        list.add(node.getValue());
+        treeToListDesc(node.getLeftChild(), list);
     }
 
     private int[] listToArray(List<Integer> listIn) {
@@ -96,6 +107,15 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
             arr[i] = listIn.get(i);
         }
         return arr;
+    }
+
+    private void treeToArrayAsc(Node node, int[] arr, int count) { //Not working
+        if (node == null) {
+            return;
+        }
+        treeToArrayAsc(node.getLeftChild(), arr, count);
+        arr[count++] = node.getValue();
+        treeToArrayAsc(node.getRightChild(), arr, count);
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
@@ -155,7 +175,7 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 //        System.out.println(tree.getLeftChild(11));
 //        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
 //        ArrayList<Object> arrayList = new ArrayList<>();
-        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));
+        System.out.println(Arrays.toString(tree.getSortedTreeDesc()));
     }
 }
 

@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager;
+package org.sparta.jn.generics;
 
 public class TheBox<T> {
     private T t;
