@@ -42,4 +42,5 @@ public class BinaryTreeImplTest {
         tree.addElement(99);
         Assertions.assertEquals(5, tree.getNumberOfElements());
     }
+
 }

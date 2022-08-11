@@ -6,12 +6,16 @@ import org.sparta.jn.sortmanager.sorters.Sortable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 //public - methods you can access
 //private - implementation
 //abstract Nodes - show values
 public class BinaryTreeImpl implements BinaryTree, Sortable {
     private final Node rootNode;
+    private static final Logger logger = Logger.getLogger("my logger");
+
 
     public BinaryTreeImpl(int elements) {
         rootNode = new Node(elements);
@@ -51,8 +55,11 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public int getLeftChild(int element) throws ChildNotFoundException {
+        logger.log(Level.FINE, "getLeftChild starts");
         Node node = findNode(element);
+        logger.log(Level.FINE, "getLeftChild ends");
         return node.getLeftChild().getValue();
+
 
 //        try {
 //            return node.getLeftChild().getValue();

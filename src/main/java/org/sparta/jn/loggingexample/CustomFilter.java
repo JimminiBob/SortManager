@@ -1,4 +1,4 @@
-package org.sparta.jn.logging;
+package org.sparta.jn.loggingexample;
 
 import java.util.logging.Filter;
 import java.util.logging.LogRecord;

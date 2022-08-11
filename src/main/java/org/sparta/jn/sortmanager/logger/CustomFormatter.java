@@ -1,4 +1,4 @@
-package org.sparta.jn.logging;
+package org.sparta.jn.sortmanager.logger;
 
 import java.time.LocalDate;
 import java.util.logging.Formatter;
