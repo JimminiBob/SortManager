@@ -5,18 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="working on returning primitive array BinaryTreeImpl">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/start/SortLoaderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/IntArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/IntArrayGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/loggingexample/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/loggingexample/CustomFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/loggingexample/CustomFormatter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/exceptions/SortLoaderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/exceptions/SortLoaderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/logger/CustomFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/logger/CustomFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/Sortable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/bubblesort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/bubblesort/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/IntArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/IntArrayGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/start/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +66,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kwokl\IdeaProjects\SortManager\src\main\java\org\sparta\jn\sortmanager\sorters\mergesort" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.sparta.jn.sortmanager.start" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.sparta.jn.sortmanager.logger" />
       <recent name="org.sparta.jn.sortmanager.controller.sorts" />
@@ -66,7 +76,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BinaryTreeImpl">
+  <component name="RunManager" selected="Application.SortLoader">
     <configuration name="BinaryTreeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl" />
       <module name="SortManager" />
@@ -93,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.SortLoader" />
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.sparta.jn.nested_classes.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.nested_classes.App" />
       <module name="SortManager" />
@@ -110,7 +133,7 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,28 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.BubbleSortTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinaryTreeImpl" />
-        <item itemvalue="Application.DisplayManagerTest" />
-        <item itemvalue="Application.org.sparta.jn.nested_classes.App" />
-        <item itemvalue="JUnit.BubbleSortTest" />
+        <item itemvalue="Application.SortLoader" />
         <item itemvalue="JUnit.BinaryTreeImplTest" />
+        <item itemvalue="Application.DisplayManagerTest" />
+        <item itemvalue="Application.BinaryTreeImpl" />
+        <item itemvalue="Application.org.sparta.jn.nested_classes.App" />
       </list>
     </recent_temporary>
   </component>
@@ -284,5 +292,21 @@
     <MESSAGE value="Nested Class SpartanComparator" />
     <MESSAGE value="working on returning primitive array BinaryTreeImpl" />
     <option name="LAST_COMMIT_MESSAGE" value="working on returning primitive array BinaryTreeImpl" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

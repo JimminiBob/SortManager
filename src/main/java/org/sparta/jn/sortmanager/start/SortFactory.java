@@ -7,9 +7,17 @@ import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
 import org.sparta.jn.sortmanager.sorters.bubblesort.BubbleSort;
 import org.sparta.jn.sortmanager.sorters.mergesort.MergeSort;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SortFactory {
 
+    private static List<String> sorterStrList = new ArrayList<>();
+
     public static Sortable getSorter(int choice) throws SortLoaderException {
+
+
+
         switch (choice) {
             case 1:
                 return new BubbleSort();
@@ -24,4 +32,12 @@ public class SortFactory {
 
         }
     }
+    public static List<String> getSorterStrList() {
+        sorterStrList.add("BubbleSort");
+        sorterStrList.add("BinarySort");
+        sorterStrList.add("MergeSort");
+        sorterStrList.add("QuickSort");
+        return sorterStrList;
+    }
+
 }

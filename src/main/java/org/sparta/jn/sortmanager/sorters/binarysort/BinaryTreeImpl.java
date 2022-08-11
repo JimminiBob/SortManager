@@ -105,7 +105,7 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
         treeToListDesc(rootNode, list);
         return listToArray(list);
     }
-    private void treeToListAsc(Node node, List<Integer> list) {
+    private void treeToListAsc(Node node, List<Integer> list) { // It's slow, but will have to do
         if (node == null) {
             return;
         }
@@ -114,7 +114,7 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
         treeToListAsc(node.getRightChild(), list);
     }
 
-    private void treeToListDesc(Node node, List<Integer> list) {
+    private void treeToListDesc(Node node, List<Integer> list) { // It's slow, but will have to do
         if (node == null) {
             return;
         }
@@ -204,6 +204,12 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     public int[] sortArray(int[] arrayToSort) {
         return new int[0];
     }
+
+    @Override
+    public String getSorterName() {
+        return null;
+    }
+
     public static void main(String[] args) {
         BinaryTreeImpl tree = new BinaryTreeImpl(5);
         tree.addElement(11);

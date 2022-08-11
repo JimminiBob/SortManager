@@ -65,6 +65,11 @@ public class MergeSort implements Sortable {
         return sort(arrayToSort);
     }
 
+    @Override
+    public String getSorterName() {
+        return null;
+    }
+
 //    public static void main(String[] args) {
 //        RandomIntArray arrayGen = new RandomIntArray();
 //        int[] arr1 = arrayGen.build(5);

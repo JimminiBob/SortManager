@@ -8,8 +8,8 @@ import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
 public class BinaryTreeImplTest {
 
     @Test
-    @DisplayName("If only one nude return int 1")
-    void ifOnlyOneNudeReturnInt1() {
+    @DisplayName("If only one node return int 1")
+    void ifOnlyOneNodeReturnInt1() {
         BinaryTreeImpl tree = new BinaryTreeImpl(15);
         Assertions.assertEquals(1, tree.getNumberOfElements());
     }

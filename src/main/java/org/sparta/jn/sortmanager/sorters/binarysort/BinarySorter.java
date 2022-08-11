@@ -8,6 +8,11 @@ public class BinarySorter implements Sortable {
 
             return null;
     }
+
+    @Override
+    public String getSorterName() {
+        return null;
+    }
 //        BinaryTreeImpl tree = new BinaryTreeImpl(arrayToSort[0]);
 //        for (int i = 1; i < arrayToSort.length; i++) {
 //            tree.addElements(i);

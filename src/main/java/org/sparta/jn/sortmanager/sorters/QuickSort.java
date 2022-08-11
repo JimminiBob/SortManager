@@ -1,6 +1,7 @@
 package org.sparta.jn.sortmanager.sorters;
 
 public class QuickSort implements Sortable{
+    private final String NAME = "QuickSort";
     public int[] quickSort(int[] arr, int begin, int end) {
         if (begin < end) {
             int partitionIndex = partition(arr, begin, end);
@@ -31,6 +32,11 @@ public class QuickSort implements Sortable{
     @Override
     public int[] sortArray(int[] arrayToSort) {
         return quickSort(arrayToSort, 0, arrayToSort.length - 1);
+    }
+
+    @Override
+    public String getSorterName() {
+        return this.NAME;
     }
 
 //        public static void main(String[] args) {
