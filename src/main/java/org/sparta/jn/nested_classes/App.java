@@ -21,9 +21,24 @@ public class App {
 
         Collections.sort(turtles);
         System.out.println(turtles);
-        SpartanComparator comparator = new SpartanComparator();
+
+        //SpartanComparator is a nested inner class
+
+       // Spartan spartanObject = new Spartan(new Spartan("Manish", LocalDate.MAX));
+
+        Spartan.SpartanComparator comparator = new Spartan.SpartanComparator(); //static inner class
 
         Collections.sort(spartans, comparator);
+//        spartans.sort(comparator);
         System.out.println(spartans);
+
+        MathOperation mathObject = new MathOperation() { //Anonymous inner class
+            @Override
+            public int add(int number1, int number2) {
+                return number1 + number2;
+            }
+        };
+        System.out.println(mathObject.add(5,7));
+        System.out.println(mathObject.getClass());
     }
 }
