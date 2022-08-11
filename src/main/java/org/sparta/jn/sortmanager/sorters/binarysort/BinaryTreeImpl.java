@@ -18,7 +18,13 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
 
     public BinaryTreeImpl(int elements) {
+        logger.log(Level.FINER, "BinaryTreeImpl(int elements) constructor called, rootNode value is " + elements);
         rootNode = new Node(elements);
+    }
+
+    public BinaryTreeImpl() {
+        logger.log(Level.FINER, "BinaryTreeImpl() constructor called, rootNode value is null");
+        rootNode = null;
     }
 
     @Override
@@ -38,9 +44,13 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public void addElements(int[] elements) {
-        for(int element: elements) {
-            addElement(element);
+        for (int element: elements) {
+            addNodeToTree(rootNode, element);
         }
+
+//        for(int element: elements) {
+//            addElement(element);
+//        }
 
     }
 
@@ -78,17 +88,18 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     @Override
     public int[] getSortedTreeAsc() {
 
-//        int[] arr = new int[getNumberOfElements()]; //primitive int array
-//        treeToArrayAsc(rootNode, arr, 0);
-//        return arr;
+        int[] arr = new int[getNumberOfElements()]; //primitive int array
+        treeToArrayAsc(rootNode, arr, 0);
+        return arr;
 
-        List<Integer> list = new ArrayList<>();
-        treeToListAsc(rootNode, list);
-        return listToArray(list);
+//        List<Integer> list = new ArrayList<>();
+//        treeToListAsc(rootNode, list);
+//        return listToArray(list);
     }
 
     @Override
     public int[] getSortedTreeDesc() {
+
 
         List<Integer> list = new ArrayList<>();
         treeToListDesc(rootNode, list);
@@ -121,9 +132,6 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     }
 
     private void treeToArrayAsc(Node node, int[] arr, int count) { //Not working
-        if (node == null) {
-            return;
-        }
         if (!node.isLeftChildEmpty()) {
             treeToArrayAsc(node.getLeftChild(), arr, count);
         }
@@ -132,7 +140,22 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
         if (!node.isRightChildEmpty()) {
             treeToArrayAsc(node.getRightChild(), arr, count);
+
         }
+
+
+//        if (node == null) {
+//            return;
+//        }
+//        if (!node.isLeftChildEmpty()) {
+//            treeToArrayAsc(node.getLeftChild(), arr, count);
+//        }
+//
+//        arr[count++] = node.getValue();
+//
+//        if (!node.isRightChildEmpty()) {
+//            treeToArrayAsc(node.getRightChild(), arr, count);
+//        }
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
@@ -177,8 +200,6 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     }
 
 
-
-
     @Override
     public int[] sortArray(int[] arrayToSort) {
         return new int[0];
@@ -188,11 +209,16 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
         tree.addElement(11);
         tree.addElement(2);
         tree.addElement(6);
-//        System.out.println(tree.getNumberOfElements());
-//        System.out.println(tree.getLeftChild(11));
-        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
+        System.out.println(tree.getNumberOfElements());
+        System.out.println(tree.getLeftChild(11));
 //        ArrayList<Object> arrayList = new ArrayList<>();
-        System.out.println(Arrays.toString(tree.getSortedTreeDesc()));
+//        System.out.println(Arrays.toString(tree.getSortedTreeDesc()));
+
+//        int[] arr = {90, 11 , 55, 100};
+//        tree.addElements(arr);
+        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
+
+
     }
 }
 

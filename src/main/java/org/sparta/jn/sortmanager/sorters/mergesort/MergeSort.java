@@ -1,6 +1,8 @@
 package org.sparta.jn.sortmanager.sorters.mergesort;
 
-public class MergeSort {
+import org.sparta.jn.sortmanager.sorters.Sortable;
+
+public class MergeSort implements Sortable {
 
     public static int[] sort(int[] arrIn) {
         int[] arrOut = arrIn;
@@ -56,6 +58,11 @@ public class MergeSort {
                 arrInPointer++;
             }
         }
+    }
+
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        return sort(arrayToSort);
     }
 
 //    public static void main(String[] args) {

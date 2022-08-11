@@ -1,9 +1,5 @@
 package org.sparta.jn.sortmanager.sorters;
 
-import org.sparta.jn.sortmanager.IntArrayGenerator;
-
-import java.util.Arrays;
-
 public class QuickSort implements Sortable{
     public int[] quickSort(int[] arr, int begin, int end) {
         if (begin < end) {

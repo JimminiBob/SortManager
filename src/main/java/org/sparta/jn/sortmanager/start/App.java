@@ -11,22 +11,7 @@ import java.util.Arrays;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        BinaryTreeImpl tree = new BinaryTreeImpl(5);
-        tree.addElement(1);
-        tree.addElement(10);
-        tree.addElement(10);
-        tree.addElement(3);
-        tree.addElement(6);
-        tree.addElement(11);
-//        System.out.println(tree.findElement(6));
-
-//        System.out.println(tree.getNumberOfElements());
-
-        int[] array = {7, 1 ,9};
-        MergeSort.sort(array);
-        System.out.println(Arrays.toString(array));
+    public static void main( String[] args ) {
 
     }
 }

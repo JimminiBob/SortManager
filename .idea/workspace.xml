@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Nested Class SpartanComparator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/MathOperation.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="working on returning primitive array BinaryTreeImpl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/Spartan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/Spartan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/nested_classes/SpartanComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/IntArrayGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/IntArrayGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/exceptions/SortLoaderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/exceptions/SortLoaderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,12 +67,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.BinaryTreeImpl">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.loggingexample.App" />
+    <configuration name="BinaryTreeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl" />
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.loggingexample.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorters.binarysort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl" />
+    <configuration name="DisplayManagerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.display.DisplayManagerTest" />
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorters.binarysort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.display.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +110,7 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,7 +125,7 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BinaryTreeImpl" />
+        <item itemvalue="Application.DisplayManagerTest" />
         <item itemvalue="Application.org.sparta.jn.nested_classes.App" />
         <item itemvalue="JUnit.BubbleSortTest" />
         <item itemvalue="JUnit.BinaryTreeImplTest" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660219113576</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="working on returning primitive array BinaryTreeImpl">
+      <created>1660227644836</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660227644836</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,17 +282,7 @@
     <MESSAGE value="Logging examples" />
     <MESSAGE value="Nested Class Spartan" />
     <MESSAGE value="Nested Class SpartanComparator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nested Class SpartanComparator" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="working on returning primitive array BinaryTreeImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on returning primitive array BinaryTreeImpl" />
   </component>
 </project>

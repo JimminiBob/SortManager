@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager;
+package org.sparta.jn.sortmanager.start;
 
 import java.util.Arrays;
 import java.util.Random;
