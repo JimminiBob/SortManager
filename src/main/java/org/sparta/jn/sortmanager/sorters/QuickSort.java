@@ -31,7 +31,8 @@ public class QuickSort implements Sortable{
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
-        return quickSort(arrayToSort, 0, arrayToSort.length - 1);
+        int[] sortedArray = quickSort(arrayToSort, 0, arrayToSort.length - 1).clone();
+        return sortedArray;
     }
 
     @Override
@@ -39,10 +40,4 @@ public class QuickSort implements Sortable{
         return this.NAME;
     }
 
-//        public static void main(String[] args) {
-//        int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
-//        int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
-//
-//        System.out.println("arr3 is " + Arrays.toString(new QuickSort().sortArray(unsorted)));
-//    }
 }

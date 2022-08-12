@@ -35,10 +35,8 @@ public class SortLoader {
         long end = System.nanoTime();
         long sortTime = end - start;
         String sortedArraytStr = Arrays.toString(sortedArray);
-
         logger.log(Level.INFO, "arrayToSort is " + Arrays.toString(arrayToSort));
         logger.log(Level.INFO, "sortedArray is " + Arrays.toString(sortedArray));
-
         DisplayManager.printResults(sortable.getSorterName(), arrayToSortStr, sortedArraytStr, sortTime);
     }
 
