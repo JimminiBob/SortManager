@@ -3,11 +3,7 @@ package org.sparta.jn.sortmanager.sorter.binarysort;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.jn.sortmanager.sorters.Sortable;
-import org.sparta.jn.sortmanager.sorters.binarysort.BinarySort;
 import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
-
-import java.util.Arrays;
 
 public class BinaryTreeImplTest {
 
