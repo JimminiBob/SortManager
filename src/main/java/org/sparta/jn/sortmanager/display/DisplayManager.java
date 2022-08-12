@@ -21,7 +21,7 @@ public class DisplayManager {
     public static void printResults(String sorterName, int[] arrayToSort, int[] sortedArray, Long sortTime) {
         System.out.println("Using " + sorterName + " to sort:");
         System.out.println(Arrays.toString(arrayToSort));
-        System.out.println("Results sorted in " + sortTime + " nanosceconds:");
+        System.out.println("Results sorted in " + sortTime + " nanoseconds:");
         System.out.println(Arrays.toString(sortedArray));
     }
 }

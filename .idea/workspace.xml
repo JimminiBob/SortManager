@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Everything seems to be working v1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Everything seems to be working v1.2">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660321203883</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Everything seems to be working v1.2">
+      <created>1660323148632</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1660323148632</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +328,8 @@
     <MESSAGE value="Fixed MergeSort" />
     <MESSAGE value="Everything seems to be working" />
     <MESSAGE value="Everything seems to be working v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything seems to be working v1.1" />
+    <MESSAGE value="Everything seems to be working v1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything seems to be working v1.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
