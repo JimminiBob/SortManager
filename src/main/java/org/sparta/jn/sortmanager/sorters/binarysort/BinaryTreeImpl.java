@@ -88,13 +88,13 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     @Override
     public int[] getSortedTreeAsc() {
 
-        int[] arr = new int[getNumberOfElements()]; //primitive int array
-        treeToArrayAsc(rootNode, arr, 0);
-        return arr;
+//        int[] arr = new int[getNumberOfElements()]; //fixed array not working
+//        treeToArrayAsc(rootNode, arr, 0);
+//        return arr;
 
-//        List<Integer> list = new ArrayList<>();
-//        treeToListAsc(rootNode, list);
-//        return listToArray(list);
+        List<Integer> list = new ArrayList<>();
+        treeToListAsc(rootNode, list);
+        return listToArray(list);
     }
 
     @Override

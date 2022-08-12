@@ -1,6 +1,5 @@
 package org.sparta.jn.sortmanager.display;
 
-import org.sparta.jn.sortmanager.sorters.Sortable;
 import org.sparta.jn.sortmanager.start.SortFactory;
 
 import java.util.Arrays;
@@ -18,10 +17,14 @@ public class DisplayManager {
         System.out.println("Enter array size to sort");
     }
 
-    public static void printResults(String sorterName, int[] arrayToSort, int[] sortedArray, Long sortTime) {
+//    public static void printArrayToSort() {
+//
+//    }
+
+    public static void printResults(String sorterName, String arrayToSortStr, String sortedArrayStr, Long sortTime) {
         System.out.println("Using " + sorterName + " to sort:");
-        System.out.println(Arrays.toString(arrayToSort));
+        System.out.println(arrayToSortStr);
         System.out.println("Results sorted in " + sortTime + " nanosceconds:");
-        System.out.println(Arrays.toString(sortedArray));
+        System.out.println(sortedArrayStr);
     }
 }

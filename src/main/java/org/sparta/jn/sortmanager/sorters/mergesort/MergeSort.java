@@ -3,6 +3,7 @@ package org.sparta.jn.sortmanager.sorters.mergesort;
 import org.sparta.jn.sortmanager.sorters.Sortable;
 
 public class MergeSort implements Sortable {
+    private final String NAME = "MergeSort";
 
     public static int[] sort(int[] arrIn) {
         int[] arrOut = arrIn;
@@ -67,21 +68,7 @@ public class MergeSort implements Sortable {
 
     @Override
     public String getSorterName() {
-        return null;
+        return this.NAME;
     }
 
-//    public static void main(String[] args) {
-//        RandomIntArray arrayGen = new RandomIntArray();
-//        int[] arr1 = arrayGen.build(5);
-//        int[] arr2 = arrayGen.build(5);
-//        int[] arr3 = new int[10];
-//        Arrays.sort(arr1);
-//        Arrays.sort(arr2);
-//
-//        MergeSort.merge(arr3,arr1,arr2);
-//
-//        System.out.println("arr1 is " + Arrays.toString(arr1));
-//        System.out.println("arr2 is " + Arrays.toString(arr2));
-//        System.out.println("arr3 is " + Arrays.toString(arr3));
-//    }
 }

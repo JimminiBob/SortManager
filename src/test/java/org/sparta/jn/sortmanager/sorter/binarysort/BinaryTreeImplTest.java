@@ -1,9 +1,13 @@
-package org.sparta.jn.sortmanager;
+package org.sparta.jn.sortmanager.sorter.binarysort;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.sparta.jn.sortmanager.sorters.Sortable;
+import org.sparta.jn.sortmanager.sorters.binarysort.BinarySort;
 import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
+
+import java.util.Arrays;
 
 public class BinaryTreeImplTest {
 
@@ -42,5 +46,18 @@ public class BinaryTreeImplTest {
         tree.addElement(99);
         Assertions.assertEquals(5, tree.getNumberOfElements());
     }
+
+    @Test
+    @DisplayName("Tree returns value in ascending order")
+    void treeReturnsValueInAscendingOrder() {
+        int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
+        int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
+        BinaryTreeImpl tree = new BinaryTreeImpl(-26);
+        tree.addElements(unsorted);
+//        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));
+        //        Assertions.assertArrayEquals(unsorted, expected);
+
+    }
+
 
 }

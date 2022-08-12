@@ -19,7 +19,7 @@ public class BubbleSort implements Sortable {
         consoleHandler.setLevel(Level.INFO);
         logger.log(Level.INFO, "intArraySorter started");
 
-        int[] arrayOut = arrayIn;
+        int[] arrayOut = arrayIn.clone();
         int length = arrayIn.length;
 
         for (int i = 0; i < length - 1; i++) {

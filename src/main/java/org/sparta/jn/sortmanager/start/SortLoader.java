@@ -29,17 +29,17 @@ public class SortLoader {
 
         int[] arrayToSort = IntArrayGenerator.build(choice);
         logger.log(Level.INFO, "arrayToSort is " + Arrays.toString(arrayToSort));
-
+        String arrayToSortStr = Arrays.toString(arrayToSort);
         long start = System.nanoTime();
         int[] sortedArray = sortable.sortArray(arrayToSort);
         long end = System.nanoTime();
         long sortTime = end - start;
+        String sortedArraytStr = Arrays.toString(sortedArray);
 
         logger.log(Level.INFO, "arrayToSort is " + Arrays.toString(arrayToSort));
         logger.log(Level.INFO, "sortedArray is " + Arrays.toString(sortedArray));
 
-        DisplayManager.printResults(sortable.getSorterName(), arrayToSort, sortedArray, sortTime
-        );
+        DisplayManager.printResults(sortable.getSorterName(), arrayToSortStr, sortedArraytStr, sortTime);
     }
 
 

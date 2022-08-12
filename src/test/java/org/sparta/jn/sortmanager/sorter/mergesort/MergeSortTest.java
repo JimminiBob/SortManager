@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager.mergesort;
+package org.sparta.jn.sortmanager.sorter.mergesort;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -19,7 +19,8 @@ public class MergeSortTest {
   void sortUnsortedArrayWith3ElementsReturnASortedArray() {
       int[] unsorted = {7, 1 ,9};
       int[] expected = {1, 7, 9};
-      Assertions.assertArrayEquals(expected, MergeSort.sort(unsorted));
+      int[] sorted = MergeSort.sort(unsorted);
+      Assertions.assertArrayEquals(expected, sorted);
   }
 
   @Test
@@ -27,7 +28,8 @@ public class MergeSortTest {
   void sortUnsortedArrayWith10ElementsReturnASortedArray() {
       int[] unsorted = {7, 1 ,9, 45, 11, 12, 0, 100, 6, 25};
       int[] expected = {0, 1, 6, 7, 9, 11, 12, 25, 45, 100};
-      Assertions.assertArrayEquals(expected, MergeSort.sort(unsorted));
+      int[] sorted = MergeSort.sort(unsorted);
+      Assertions.assertArrayEquals(expected, sorted);
   }
 
     @Test
@@ -35,7 +37,8 @@ public class MergeSortTest {
     void sortAnArrayWithNegativeNumbersShouldReturnSortedArray() {
         int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
         int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
-        Assertions.assertArrayEquals(expected, MergeSort.sort(unsorted));
+        int[] sorted = MergeSort.sort(unsorted);
+        Assertions.assertArrayEquals(expected, sorted);
         
     }
 

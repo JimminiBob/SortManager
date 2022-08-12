@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager;
+package org.sparta.jn.sortmanager.sorter;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
