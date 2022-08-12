@@ -1,4 +1,4 @@
-package org.sparta.jn.sortmanager.sorters.mergesort;
+package org.sparta.jn.sortmanager.sorters;
 
 import org.sparta.jn.sortmanager.sorters.Sortable;
 
@@ -6,7 +6,7 @@ public class MergeSort implements Sortable {
     private final String NAME = "MergeSort";
 
     private int[] sort(int[] arrIn) {
-        int[] arrOut = arrIn.clone();
+        int[] arrOut = arrIn;
         int arrInLength = arrOut.length;
         if (arrInLength < 2) {
             return arrOut;
@@ -63,7 +63,8 @@ public class MergeSort implements Sortable {
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
-        return sort(arrayToSort);
+        int[] sortedArray = sort(arrayToSort).clone();
+        return sortedArray;
     }
 
     @Override

@@ -1,9 +1,9 @@
-package org.sparta.jn.sortmanager.sorter.mergesort;
+package org.sparta.jn.sortmanager.sorter;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.jn.sortmanager.sorters.mergesort.MergeSort;
+import org.sparta.jn.sortmanager.sorters.MergeSort;
 
 public class MergeSortTest {
 

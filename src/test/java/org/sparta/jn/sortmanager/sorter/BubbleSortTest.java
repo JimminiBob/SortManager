@@ -3,7 +3,7 @@ package org.sparta.jn.sortmanager.sorter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.jn.sortmanager.sorters.bubblesort.BubbleSort;
+import org.sparta.jn.sortmanager.sorters.BubbleSort;
 
 public class BubbleSortTest {
     @Test

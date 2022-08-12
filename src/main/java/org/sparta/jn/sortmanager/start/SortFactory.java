@@ -4,9 +4,8 @@ import org.sparta.jn.sortmanager.exceptions.SortLoaderException;
 import org.sparta.jn.sortmanager.sorters.QuickSort;
 import org.sparta.jn.sortmanager.sorters.Sortable;
 import org.sparta.jn.sortmanager.sorters.binarysort.BinarySort;
-import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
-import org.sparta.jn.sortmanager.sorters.bubblesort.BubbleSort;
-import org.sparta.jn.sortmanager.sorters.mergesort.MergeSort;
+import org.sparta.jn.sortmanager.sorters.BubbleSort;
+import org.sparta.jn.sortmanager.sorters.MergeSort;
 
 import java.util.ArrayList;
 import java.util.List;

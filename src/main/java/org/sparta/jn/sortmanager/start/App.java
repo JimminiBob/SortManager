@@ -1,10 +1,5 @@
 package org.sparta.jn.sortmanager.start;
 
-import org.sparta.jn.sortmanager.sorters.binarysort.BinaryTreeImpl;
-import org.sparta.jn.sortmanager.sorters.mergesort.MergeSort;
-
-import java.util.Arrays;
-
 /**
  * Hello world!
  *

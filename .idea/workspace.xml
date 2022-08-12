@@ -61,17 +61,17 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray">
+  <component name="RunManager" selected="JUnit.MergeSortTest">
     <configuration name="MergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.mergesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.MergeSortTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,12 +81,12 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.mergesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.MergeSortTest" />
       <option name="METHOD_NAME" value="sortAnArrayWithNegativeNumbersShouldReturnSortedArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -97,12 +97,12 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.mergesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.MergeSortTest" />
       <option name="METHOD_NAME" value="sortArrayOfOneLength" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -113,12 +113,12 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.mergesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.MergeSortTest" />
       <option name="METHOD_NAME" value="sortUnsortedArrayWith10ElementsReturnASortedArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -129,12 +129,12 @@
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.mergesort.*" />
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort" />
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.mergesort.MergeSortTest" />
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.MergeSortTest" />
       <option name="METHOD_NAME" value="sortUnsortedArrayWith3ElementsReturnASortedArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -143,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest" />
+        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
         <item itemvalue="JUnit.MergeSortTest.sortAnArrayWithNegativeNumbersShouldReturnSortedArray" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />

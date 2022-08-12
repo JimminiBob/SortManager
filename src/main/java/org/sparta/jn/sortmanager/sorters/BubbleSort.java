@@ -1,7 +1,6 @@
-package org.sparta.jn.sortmanager.sorters.bubblesort;
+package org.sparta.jn.sortmanager.sorters;
 
 import org.sparta.jn.sortmanager.logger.CustomFormatter;
-import org.sparta.jn.sortmanager.sorters.Sortable;
 
 import java.util.Arrays;
 import java.util.logging.ConsoleHandler;
