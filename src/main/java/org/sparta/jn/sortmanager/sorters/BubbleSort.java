@@ -12,14 +12,17 @@ public class BubbleSort implements Sortable {
 
     private static final Logger logger = Logger.getLogger("my logger");
     private static ConsoleHandler consoleHandler = new ConsoleHandler();
-
-    public static int[] intArraySorter(int[] arrayIn) {
+    @Override
+    public int[] sortArray(int[] arrIn) {
+        int[] arrToSort = arrIn.clone();
+        BubbleSort.intArraySorter(arrToSort);
+        return arrToSort;
+    }
+    public static int[] intArraySorter(int[] arrToSort) {
         consoleHandler.setFormatter(new CustomFormatter());
         consoleHandler.setLevel(Level.INFO);
         logger.log(Level.INFO, "intArraySorter started");
-
-        int[] arrayOut = arrayIn.clone();
-        int length = arrayIn.length;
+        int length = arrToSort.length;
 
         for (int i = 0; i < length - 1; i++) {
             logger.log(Level.FINE, "forloop for times to iterate, i is " + i);
@@ -27,15 +30,15 @@ public class BubbleSort implements Sortable {
             for (int j = 0; j < length - i - 1; j++) {
                 logger.log(Level.FINE, "forloop for comparison, i is " + i + "j is " + j);
 
-                if (arrayOut[j] > arrayOut[j+1]) {
-                    swapValue(arrayOut, j);
+                if (arrToSort[j] > arrToSort[j+1]) {
+                    swapValue(arrToSort, j);
                 }
             }
             logger.log(Level.FINE, "forloop for times to iterate ends");
 
         }
         logger.log(Level.INFO, "intArraySorter method ends");
-        return arrayOut;
+        return arrToSort;
     }
 
     private static void swapValue(int[] arrayToSwap, int j) {
@@ -49,11 +52,6 @@ public class BubbleSort implements Sortable {
         arrayToSwap[j +1] = temp;
         logger.log(Level.FINE, "swapValue method ends");
 
-    }
-
-    @Override
-    public int[] sortArray(int[] arrayToSort) {
-        return BubbleSort.intArraySorter(arrayToSort);
     }
 
     @Override

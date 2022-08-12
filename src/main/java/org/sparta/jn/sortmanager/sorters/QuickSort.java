@@ -2,6 +2,12 @@ package org.sparta.jn.sortmanager.sorters;
 
 public class QuickSort implements Sortable{
     private final String NAME = "QuickSort";
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        int[] arrOut = arrayToSort.clone();
+        quickSort(arrOut, 0, arrOut.length - 1);
+        return arrOut;
+    }
     public int[] quickSort(int[] arr, int begin, int end) {
         if (begin < end) {
             int partitionIndex = partition(arr, begin, end);
@@ -29,11 +35,6 @@ public class QuickSort implements Sortable{
         return i+1;
     }
 
-    @Override
-    public int[] sortArray(int[] arrayToSort) {
-        int[] sortedArray = quickSort(arrayToSort, 0, arrayToSort.length - 1).clone();
-        return sortedArray;
-    }
 
     @Override
     public String getSorterName() {

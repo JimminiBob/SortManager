@@ -1,31 +1,34 @@
 package org.sparta.jn.sortmanager.sorters;
 
-import org.sparta.jn.sortmanager.sorters.Sortable;
-
 public class MergeSort implements Sortable {
     private final String NAME = "MergeSort";
 
-    private int[] sort(int[] arrIn) {
-        int[] arrOut = arrIn;
-        int arrInLength = arrOut.length;
+    @Override
+    public int[] sortArray(int[] arrayToSort) {
+        int[] arrayOut = arrayToSort.clone();
+        return mergeSort(arrayOut);
+    }
+
+    private int[] mergeSort(int[] arrIn) {
+        int arrInLength = arrIn.length;
         if (arrInLength < 2) {
-            return arrOut;
+            return arrIn;
         }
         int mid = arrInLength / 2;
         int[] leftArray = new int[mid];
         int[] rightArray = new int[arrInLength - mid];
 
         for (int i = 0; i < mid; i++) {
-            leftArray[i] = arrOut[i];
+            leftArray[i] = arrIn[i];
         }
         for (int i = mid; i < arrInLength ; i++) {
-            rightArray[i - mid] = arrOut[i];
+            rightArray[i - mid] = arrIn[i];
         }
-        sort(leftArray);
-        sort(rightArray);
+        mergeSort(leftArray);
+        mergeSort(rightArray);
 
-        merge(arrOut, leftArray, rightArray);
-        return arrOut;
+        merge(arrIn, leftArray, rightArray);
+        return arrIn;
     }
 
     public void merge(int[] arrIn, int[] leftArray, int[] rightArray) {
@@ -61,11 +64,6 @@ public class MergeSort implements Sortable {
         }
     }
 
-    @Override
-    public int[] sortArray(int[] arrayToSort) {
-        int[] sortedArray = sort(arrayToSort).clone();
-        return sortedArray;
-    }
 
     @Override
     public String getSorterName() {

@@ -17,8 +17,8 @@ public class BinarySortTest {
         int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
         int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
         Sortable binarySort = new BinarySort();
-        unsorted = binarySort.sortArray(unsorted);
-        Assertions.assertArrayEquals(expected, unsorted);
+        int[] sorted = binarySort.sortArray(unsorted);
+        Assertions.assertArrayEquals(expected, sorted);
 
     }
 

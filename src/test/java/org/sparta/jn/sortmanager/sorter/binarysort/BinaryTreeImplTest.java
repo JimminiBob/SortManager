@@ -52,10 +52,11 @@ public class BinaryTreeImplTest {
     void treeReturnsValueInAscendingOrder() {
         int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
         int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
+
         BinaryTreeImpl tree = new BinaryTreeImpl(-26);
         tree.addElements(unsorted);
-//        System.out.println(Arrays.toString(tree.getSortedTreeAsc()));
-        //        Assertions.assertArrayEquals(unsorted, expected);
+        int[] sorted = tree.getSortedTreeAsc();
+        Assertions.assertArrayEquals(expected, sorted);
 
     }
 
