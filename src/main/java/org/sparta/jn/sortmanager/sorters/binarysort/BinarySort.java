@@ -2,7 +2,7 @@ package org.sparta.jn.sortmanager.sorters.binarysort;
 
 import org.sparta.jn.sortmanager.sorters.Sortable;
 
-public class BinarySorter implements Sortable {
+public class BinarySort implements Sortable {
     @Override
     public int[] sortArray(int[] arrayToSort) {
 
