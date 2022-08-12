@@ -19,7 +19,6 @@ public class BubbleSort implements Sortable {
         return arrToSort;
     }
     public static int[] intArraySorter(int[] arrToSort) {
-        consoleHandler.setFormatter(new CustomFormatter());
         consoleHandler.setLevel(Level.INFO);
         logger.log(Level.INFO, "intArraySorter started");
         int length = arrToSort.length;
