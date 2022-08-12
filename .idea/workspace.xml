@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="SortLoader, DisplayManager working">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/SortableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinarySortTest.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Using array.clone(), but breaks MergeSort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinarySort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/bubblesort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/bubblesort/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/mergesort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/start/SortLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BinaryTreeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/BubbleSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/ArrayMergerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/mergesort/ArrayMergerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/mergesort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/mergesort/MergeSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/start/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/start/SortLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/start/AllSortableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/mergesort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/mergesort/MergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +61,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MergeSortTest">
+  <component name="RunManager" selected="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray">
     <configuration name="MergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
@@ -157,10 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest" />
         <item itemvalue="JUnit.MergeSortTest.sortArrayOfOneLength" />
         <item itemvalue="JUnit.MergeSortTest.sortAnArrayWithNegativeNumbersShouldReturnSortedArray" />
-        <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith10ElementsReturnASortedArray" />
         <item itemvalue="JUnit.MergeSortTest.sortUnsortedArrayWith3ElementsReturnASortedArray" />
       </list>
     </recent_temporary>
@@ -279,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660253819784</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Using array.clone(), but breaks MergeSort">
+      <created>1660303506686</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660303506686</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,7 +303,8 @@
     <MESSAGE value="Nested Class SpartanComparator" />
     <MESSAGE value="working on returning primitive array BinaryTreeImpl" />
     <MESSAGE value="SortLoader, DisplayManager working" />
-    <option name="LAST_COMMIT_MESSAGE" value="SortLoader, DisplayManager working" />
+    <MESSAGE value="Using array.clone(), but breaks MergeSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using array.clone(), but breaks MergeSort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,6 +313,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/display/DisplayManagerTest.java</url>
           <line>9</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/mergesort/MergeSortTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

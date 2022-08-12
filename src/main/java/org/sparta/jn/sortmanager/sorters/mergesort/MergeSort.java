@@ -5,8 +5,8 @@ import org.sparta.jn.sortmanager.sorters.Sortable;
 public class MergeSort implements Sortable {
     private final String NAME = "MergeSort";
 
-    public static int[] sort(int[] arrIn) {
-        int[] arrOut = arrIn;
+    private int[] sort(int[] arrIn) {
+        int[] arrOut = arrIn.clone();
         int arrInLength = arrOut.length;
         if (arrInLength < 2) {
             return arrOut;
@@ -28,7 +28,7 @@ public class MergeSort implements Sortable {
         return arrOut;
     }
 
-    private static void merge(int[] arrIn, int[] leftArray, int[] rightArray) {
+    public void merge(int[] arrIn, int[] leftArray, int[] rightArray) {
         int leftLength = leftArray.length;
         int rightLength = rightArray.length;
 
