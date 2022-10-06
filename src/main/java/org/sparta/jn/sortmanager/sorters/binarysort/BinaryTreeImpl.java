@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 //abstract Nodes - show values
 public class BinaryTreeImpl implements BinaryTree, Sortable {
     private Node rootNode;
+    private int index;
     private static final Logger logger = Logger.getLogger("my logger");
 
 
@@ -90,9 +91,9 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public int[] getSortedTreeAsc() {
+        index = 0;
         int[] arr = new int[getNumberOfElements()];
-        treeToArrayAsc(rootNode, arr, 0);
-        return arr;
+        return treeToArrayAsc(rootNode, arr);
 
     }
 
@@ -101,22 +102,19 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
         return null;
     }
 
-    private int treeToArrayAsc(Node node, int[] arr, int count) { //Not working
+    private int[] treeToArrayAsc(Node node, int[] arr) {
         if (!node.isLeftChildEmpty()) {
-            count = treeToArrayAsc(node.getLeftChild(), arr, count);
-            arr[count] = node.getValue();
+            treeToArrayAsc(node.getLeftChild(), arr);
         }
-
-        if (count < arr.length - 1) {
-            count++;
-            count = treeToArrayAsc(node.getRightChild(), arr, count);
-
+        arr[index++] = node.getValue();
+        if (!node.isRightChildEmpty()) {
+            treeToArrayAsc(node.getRightChild(), arr);
         }
-        return count;
+        return arr;
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
-        if (element < node.getValue()) {
+        if (element <= node.getValue()) {
             if (node.isLeftChildEmpty()) {
                 node.setLeftChild(new Node(element));
             } else {
@@ -161,7 +159,7 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     public int[] sortArray(int[] arrayIn) {
         int[] arrayOut = arrayIn.clone();
         addElements(arrayOut);
-        treeToArrayAsc(rootNode, arrayOut,0);
+        treeToArrayAsc(rootNode, arrayOut);
         return arrayOut;
     }
 
@@ -171,12 +169,12 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
     }
 
     public static void main(String[] args) {
-        BinaryTreeImpl tree = new BinaryTreeImpl(5);
-        tree.addElement(11);
+        BinaryTreeImpl tree = new BinaryTreeImpl(7);
         tree.addElement(2);
-        tree.addElement(6);
+        tree.addElement(4);
+        tree.addElement(2);
+        tree.addElement(7);
         System.out.println(tree.getNumberOfElements());
-        System.out.println(tree.getLeftChild(11));
         System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
 
 

@@ -26,7 +26,6 @@ public class BinarySort implements Sortable {
             } while (count < arrOut.length);
         }
         logger.log(Level.INFO,"arrOut after sortArray " + Arrays.toString(arrOut));
-
         return tree.getSortedTreeAsc();
     }
 
