@@ -49,7 +49,7 @@ public class BinaryTreeImplTest {
         int[] unsorted = {-26, 43, -44, -74, -19, 81, -33, -73, 57, 28};
         int[] expected = {-74, -73, -44, -33, -26, -19, 28, 43, 57, 81};
 
-        BinaryTreeImpl tree = new BinaryTreeImpl(-26);
+        BinaryTreeImpl tree = new BinaryTreeImpl();
         tree.addElements(unsorted);
         int[] sorted = tree.getSortedTreeAsc();
         Assertions.assertArrayEquals(expected, sorted);

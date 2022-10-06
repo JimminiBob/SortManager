@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Everything seems to be working v1.2">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/display/DisplayManager.java" afterDir="false" />
+    <list default="true" id="d3cc9c8e-5a73-4cd8-83ea-88021c37c646" name="Changes" comment="Everything seems to be working v1.3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sparta/jn/sortmanager/sorters/binarysort/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +37,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kwokl/IdeaProjects/SortManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/kwokl/Sparta/Reference/SortManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kwokl\IdeaProjects\SortManager" />
@@ -60,33 +62,7 @@
       <recent name="org.sparta.jn.sortmanager.sorts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeImplTest">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.App" />
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.start.SortLoader" />
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sparta.jn.sortmanager.start.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BinaryTreeImplTest.treeReturnsValueInAscendingOrder">
     <configuration name="AllSortableTest.testAllSortersWithASingleElementInAnArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
@@ -103,7 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySortTest.sortsAnArrayWith10Elements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +89,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.binarysort" />
       <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.binarysort.BinarySortTest" />
-      <option name="METHOD_NAME" value="sortsAnArrayWith10Elements" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,13 +109,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinaryTreeImplTest.treeReturnsValueInAscendingOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.binarysort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter.binarysort" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.binarysort.BinaryTreeImplTest" />
+      <option name="METHOD_NAME" value="treeReturnsValueInAscendingOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sparta.jn.sortmanager.sorter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sparta.jn.sortmanager.sorter" />
+      <option name="MAIN_CLASS_NAME" value="org.sparta.jn.sortmanager.sorter.BubbleSortTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeImplTest.treeReturnsValueInAscendingOrder" />
+        <item itemvalue="JUnit.BinarySortTest" />
         <item itemvalue="JUnit.BinaryTreeImplTest" />
+        <item itemvalue="JUnit.BubbleSortTest" />
         <item itemvalue="JUnit.AllSortableTest.testAllSortersWithASingleElementInAnArray" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.BinarySortTest.sortsAnArrayWith10Elements" />
-        <item itemvalue="Application.SortLoader" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660323148632</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Everything seems to be working v1.3">
+      <created>1660323241516</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1660323241516</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Everything seems to be working v1.3">
+      <created>1660323259651</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1660323259651</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +349,8 @@
     <MESSAGE value="Everything seems to be working" />
     <MESSAGE value="Everything seems to be working v1.1" />
     <MESSAGE value="Everything seems to be working v1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything seems to be working v1.2" />
+    <MESSAGE value="Everything seems to be working v1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything seems to be working v1.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,16 +361,16 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/BubbleSortTest.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinarySortTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/test/java/org/sparta/jn/sortmanager/sorter/binarysort/BinaryTreeImplTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SortManager$BinaryTreeImplTest_treeReturnsValueInAscendingOrder.ic" NAME="BinaryTreeImplTest.treeReturnsValueInAscendingOrder Coverage Results" MODIFIED="1665052028569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.sparta.jn.sortmanager.sorter.binarysort.*</FILTER>
+    </SUITE>
   </component>
 </project>

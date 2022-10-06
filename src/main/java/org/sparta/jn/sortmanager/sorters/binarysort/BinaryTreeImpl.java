@@ -13,13 +13,13 @@ import java.util.logging.Logger;
 //private - implementation
 //abstract Nodes - show values
 public class BinaryTreeImpl implements BinaryTree, Sortable {
-    private final Node rootNode;
+    private Node rootNode;
     private static final Logger logger = Logger.getLogger("my logger");
 
 
-    public BinaryTreeImpl(int elements) {
-        logger.log(Level.FINER, "BinaryTreeImpl(int elements) constructor called, rootNode value is " + elements);
-        rootNode = new Node(elements);
+    public BinaryTreeImpl(int element) {
+        logger.log(Level.FINER, "BinaryTreeImpl(int elements) constructor called, rootNode value is " + element);
+        rootNode = new Node(element);
     }
 
     public BinaryTreeImpl() {
@@ -44,14 +44,17 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public void addElements(int[] elements) {
-        for (int element: elements) {
-            addNodeToTree(rootNode, element);
+        if (rootNode == null && elements.length >= 1) {
+            rootNode = new Node(elements[0]);
+        } else if (elements.length >= 1) {
+            addNodeToTree(rootNode, elements[0]);
         }
+        if (elements.length > 1) {
+            for (int element = 1; element < elements.length; element++) {
+                addNodeToTree(rootNode, elements[element]);
 
-//        for(int element: elements) {
-//            addElement(element);
-//        }
-
+            }
+        }
     }
 
     public boolean findElement(int element) {
@@ -87,75 +90,29 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
     @Override
     public int[] getSortedTreeAsc() {
+        int[] arr = new int[getNumberOfElements()];
+        treeToArrayAsc(rootNode, arr, 0);
+        return arr;
 
-//        int[] arr = new int[getNumberOfElements()]; //fixed array not working
-//        treeToArrayAsc(rootNode, arr, 0);
-//        return arr;
-
-        List<Integer> list = new ArrayList<>();
-        treeToListAsc(rootNode, list);
-        return listToArray(list);
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-
-
-        List<Integer> list = new ArrayList<>();
-        treeToListDesc(rootNode, list);
-        return listToArray(list);
-    }
-    private void treeToListAsc(Node node, List<Integer> list) { // It's slow, but will have to do
-        if (node == null) {
-            return;
-        }
-        treeToListAsc(node.getLeftChild(), list);
-        list.add(node.getValue());
-        treeToListAsc(node.getRightChild(), list);
+        return null;
     }
 
-    private void treeToListDesc(Node node, List<Integer> list) { // It's slow, but will have to do
-        if (node == null) {
-            return;
-        }
-        treeToListDesc(node.getRightChild(), list);
-        list.add(node.getValue());
-        treeToListDesc(node.getLeftChild(), list);
-    }
-
-    private int[] listToArray(List<Integer> listIn) {
-        int[] arr = new int[listIn.size()];
-        for (int i = 0; i < listIn.size(); i++) {
-            arr[i] = listIn.get(i);
-        }
-        return arr;
-    }
-
-    private void treeToArrayAsc(Node node, int[] arr, int count) { //Not working
+    private int treeToArrayAsc(Node node, int[] arr, int count) { //Not working
         if (!node.isLeftChildEmpty()) {
-            treeToArrayAsc(node.getLeftChild(), arr, count);
+            count = treeToArrayAsc(node.getLeftChild(), arr, count);
+            arr[count] = node.getValue();
         }
 
-        arr[count++] = node.getValue();
-
-        if (!node.isRightChildEmpty()) {
-            treeToArrayAsc(node.getRightChild(), arr, count);
+        if (count < arr.length - 1) {
+            count++;
+            count = treeToArrayAsc(node.getRightChild(), arr, count);
 
         }
-
-
-//        if (node == null) {
-//            return;
-//        }
-//        if (!node.isLeftChildEmpty()) {
-//            treeToArrayAsc(node.getLeftChild(), arr, count);
-//        }
-//
-//        arr[count++] = node.getValue();
-//
-//        if (!node.isRightChildEmpty()) {
-//            treeToArrayAsc(node.getRightChild(), arr, count);
-//        }
+        return count;
     }
 
     private void addNodeToTree(Node node, int element) { //grunt work
@@ -201,8 +158,11 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
 
 
     @Override
-    public int[] sortArray(int[] arrayToSort) {
-        return new int[0];
+    public int[] sortArray(int[] arrayIn) {
+        int[] arrayOut = arrayIn.clone();
+        addElements(arrayOut);
+        treeToArrayAsc(rootNode, arrayOut,0);
+        return arrayOut;
     }
 
     @Override
@@ -217,11 +177,6 @@ public class BinaryTreeImpl implements BinaryTree, Sortable {
         tree.addElement(6);
         System.out.println(tree.getNumberOfElements());
         System.out.println(tree.getLeftChild(11));
-//        ArrayList<Object> arrayList = new ArrayList<>();
-//        System.out.println(Arrays.toString(tree.getSortedTreeDesc()));
-
-//        int[] arr = {90, 11 , 55, 100};
-//        tree.addElements(arr);
         System.out.println(Arrays.toString(tree.getSortedTreeAsc()));;
 
 
